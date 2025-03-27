@@ -24,39 +24,76 @@ int main(void) {
   }
 
   printStack(stack);
+  /*getchar();*/
   push(stack, 1);
+  /*printStack(stack);*/
+  /*getchar();*/
   push(stack, 2);
+  /*printStack(stack);*/
+  /*getchar();*/
   push(stack, 3);
+  /*printStack(stack);*/
+  /*getchar();*/
+  push(stack, 4);
+  /*printStack(stack);*/
+  /*getchar();*/
+
+  pop(stack);
+  printStack(stack);
+  getchar();
+  pop(stack);
+  printStack(stack);
+  getchar();
+  pop(stack);
+  printStack(stack);
+  getchar();
+  pop(stack);
+  printStack(stack);
+  getchar();
+  pop(stack);
+  printStack(stack);
+  getchar();
+  pop(stack);
+  printStack(stack);
+  getchar();
+
+  /*printStack(stack);*/
+  /*push(stack, 1);*/
+  /*push(stack, 2);*/
+  /*push(stack, 3);*/
+  /**/
+  /*getchar();*/
 
   /*****************************************************************************************/
   /* Print the stack based on the current head - too lazy for checks this is just exercise */
-  printf("Current stack:\r\n");
-  struct Node* current = stack->head;
-  while (current) {
-    printf("%d\r\n", current->id);
-    current = current->next;
-  }
-
-  printf("\r\n");
+  /*printf("Current stack:\r\n");*/
+  /*struct Node* current = stack->head;*/
+  /*while (current) {*/
+  /*  printf("%d\r\n", current->id);*/
+  /*  current = current->next;*/
+  /*}*/
+  /**/
+  /*printf("\r\n");*/
 
   /* Print the stack based on the current NEW head - too lazy for checks this is just exercise */
-  printf("Inversed stack:\r\n");
-  struct Node* newHead = reverseStack(stack);
-  while (newHead) {
-    printf("%d\r\n", newHead->id);
-    newHead = newHead->next;
-  }
+  /*printf("Inversed stack:\r\n");*/
+  /*struct Node* newHead = reverseStack(stack);*/
+  /*while (newHead) {*/
+  /*  printf("%d\r\n", newHead->id);*/
+  /*  newHead = newHead->next;*/
+  /*}*/
   /*****************************************************************************************/
 
-  printStack(stack);
-  search(stack, 3);
-  search(stack, 4);
-  pop(stack);
-  pop(stack);
-  pop(stack);
-  pop(stack);
-  pop(stack);
-  printStack(stack);
+  /*printStack(stack);*/
+  /*search(stack, 3);*/
+  /*search(stack, 4);*/
+  /*pop(stack);*/
+  /*pop(stack);*/
+  /*pop(stack);*/
+  /*pop(stack);*/
+  /*pop(stack);*/
+  /*printStack(stack);*/
+  /*getchar();*/
   return 0;
 }
 
